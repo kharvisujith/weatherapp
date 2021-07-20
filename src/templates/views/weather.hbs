@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerlinks}}
+</head>
+<body>
+    <!--main menu-->
+    {{>main_menu}}
+   
+
+    <!-- main-header -->
+    <div class="search-div">
+        <input class="search-bar" type="text" placeholder="Enter city name" id="search_bar">
+
+        <button class="search-button" id="btn_search">search</button>
+    </div>
+    <div class="main-box">
+        <div class="top-div">
+            <span>Tuesday</span>
+             <span class="date">13OCT</span>
+        </div>
+        <div class="mid-div">
+            <h1 id="city_country">get output here</h1>
+        </div>
+        <div class="bottom-div">
+            <h1 id="temp"></h1>
+            <h1 id ="temp_logo"></h1> 
+        </div>
+    </div>
+    <!-- footer-->
+    {{>footer}}
+    
+
+    <script src="/js/main.js"></script>
+
+   
+
+  
+</body>
+</html>

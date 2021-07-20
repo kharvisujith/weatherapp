@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+ html{
+    font-size: 62.5%;
+} 
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+/* using variables */
+:root {
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+.row{
+    margin: 0;
+}
+
+.main-menu {
+    background-color: var(--main-bg);
+    font-size:1rem;
+}
+
+.navbar{
+    background-color: var(--main-bg);
+    padding:2rem 0;
+}
+
+.navbar a {
+    color:#fff;
+    font-size: 1.8rem;
+    
+}
+
+.navbar-nav li {
+    margin-left: 2rem;
+}
+  
+
+.navbar-toggler {
+    background-color:grey;
+}
+
+.navbar :hover{
+    color: var(--main-color);
+}
+
+
+/* rotating */
+.fa-snowflake{
+    color: var(--main-color);
+    transition: all linear;
+    animation: rot 1s linear infinite ;
+}
+
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+
+/* main-header */
+.main-header{
+    margin-top: 2rem;
+}
+.main-header-left {
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.main-header-right {
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+   
+ 
+
+}
+/*  to resize image propotionally */
+/* .main-header-right .img-fluid{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;  
+} 
+ */
+.main-header-left p{
+    font-size: 2rem;
+}
+.main-header-left h1{
+    font-size: 3.2rem;
+}
+.main-header-left .text-color{
+    color: var(--main-color);
+}
+.main-header-left button{
+border:none;
+outline: none;
+padding: 0.8rem 2rem;
+margin-top: 1rem;
+font-size:1.2rem;
+border-radius: 1rem;
+text-transform: capitalize;
+box-shadow: 0 8px 6px  rgba(0,0,0,0.3)
+}
+
+.main-header-left button:hover{
+    box-shadow: 0 8px 6px 0 var(--main-bg);
+}
+
+/* weather_page */
+.search-div{
+    width:80rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+
+
+}
+.search-bar{
+   width: 84%;
+   border-radius: 1rem;
+   outline: none;
+   font-size: 2rem;
+   padding: 1rem;
+   color: white;
+   background-color: var(--main-bg);
+   font-family: 'Cairo', sans-serif;
+} 
+.search-button{
+    width:15%;
+    outline:none;
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 1rem;
+    color:white;
+    background-color: var(--main-bg);
+    font-family: 'Cairo', sans-serif;
+    
+}
+.search-button:hover{
+    background-color: white;
+    color: var(--main-bg);
+
+}
+
+.main-box{
+    width:30rem;
+    height: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    color:white;
+    background-color: #13181C;
+
+}
+
+.main-box .top-div{
+    font-size:1.5rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem 1rem 0 0;
+    color:white;
+    background-color: var(--main-bg);
+}
+.main-box .top-div span{
+    font-family: 'Cairo', sans-serif;
+}
+
+.main-box .mid-div h1{
+  
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    padding: 4rem 1rem;
+    color:#a9a9a9;
+    
+    font-family: 'Cairo', sans-serif;
+}
+
+.main-box .bottom-div{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.main-box .bottom-div h1{
+    font-size:5rem;
+    font-family: 'Cairo', sans-serif;
+}
+.fa-cloud{
+    color:darkcyan;
+}
+
+
+
+
+
+
+
+/* for footer */
+
+footer{
+  
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+
+footer p {
+    margin:0;
+    text-align: center;
+    color:#fff;
+    font-size:1.4rem;
+    line-height: 3rem;  
+}
+
+
+/* about page */
+/* use this for outline images */
+/* .main-header-right figure img {
+    filter: drop-shadow(0 0.5rem 1rem rgba(0,0,0,0.3));
+}
+ */
+
+/*  responsive code */
+
+@media(max-width:768px){
+    .main-header-left{
+        height: auto;
+        margin:2rem 0 5rem 0;
+     
+    }
+    .main-header-right{
+        height: auto;
+        margin-top: 0.5rem;
+
+    }
+}
+
+
+
+
