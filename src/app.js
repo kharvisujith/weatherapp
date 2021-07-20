@@ -14,7 +14,7 @@ const port = process.env.PORT || 8000
 
 const template_path=path.join(__dirname, "/templates/views")
 const partials_path = path.join(__dirname, "/templates/partials")
-console.log(template_path)
+
 
 
 //setting view engine
