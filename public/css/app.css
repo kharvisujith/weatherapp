@@ -251,10 +251,12 @@ footer p {
     }
     .search-bar{
         width: auto;
+        padding: 0.5rem;
     
     }
     .search-button{
         width: auto;
+        padding: 0.5rem;
         
     }
     .main-box{
@@ -272,16 +274,21 @@ footer p {
     }
     .search-bar{
         width: auto;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .search-button{
-        font-size: 1.5rem;
+        width: auto;
+        font-size: 1.3rem;
+        padding:
     }
     .main-box{
-        width:90%;
+        min-width:85%;
+        width: auto;
     }
-
+    .main-box .bottom-div h1{
+        font-size: 4rem;;
     } 
 
 
 
+ }
