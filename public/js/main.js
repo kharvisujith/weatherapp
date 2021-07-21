@@ -31,7 +31,7 @@ const getdata = async (city) =>{
     resp =await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_key}`)
     const rest = await resp.json()
     const result = [rest]
-    console.log("result is " + result)
+
 
     const cityname = result[0].name
     const country = result[0].sys.country

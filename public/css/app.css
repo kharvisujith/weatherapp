@@ -22,8 +22,10 @@ body{
 
 /* using variables */
 :root {
-    --main-bg: #1e272e;
-    --main-color: #0097e6;
+    --main-bg: #1e272e; 
+ 
+     --main-color: #0097e6;
+
 }
 
 .row{
@@ -51,10 +53,9 @@ body{
 }
   
 
-.navbar-toggler {
-    background-color:grey;
+.fa-bars{
+    background-color: red;
 }
-
 .navbar :hover{
     color: var(--main-color);
 }
@@ -141,6 +142,7 @@ box-shadow: 0 8px 6px  rgba(0,0,0,0.3)
     margin-right: auto;
     margin-top: 8rem;
     margin-bottom: 5rem;
+  
 }
 .search-bar{
    width: 84%;
@@ -181,6 +183,7 @@ box-shadow: 0 8px 6px  rgba(0,0,0,0.3)
     border-radius: 1rem;
     color:white;
     background-color: #13181C;
+    margin-bottom: 10rem;
 
 }
 
@@ -267,18 +270,42 @@ footer p {
     }
     .search-div{
         width: auto;
-       
+        display: flex;
+        flex-wrap: wrap;   
     }
     .search-bar{
         width: auto;
+    
     }
     .search-button{
         width: auto;
-    
+        
+    }
+    .main-box{
+
+        width: 80%;
     }
     
 }
 
+ @media(max-width:300px){
+    .search-div{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;   
+    }
+    .search-bar{
+        width: auto;
+        font-size: 1.5rem;
+    }
+    .search-button{
+        font-size: 1.5rem;
+    }
+    .main-box{
+        width:90%;
+    }
+
+    } 
 
 
 
