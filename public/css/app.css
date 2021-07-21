@@ -141,8 +141,6 @@ box-shadow: 0 8px 6px  rgba(0,0,0,0.3)
     margin-right: auto;
     margin-top: 8rem;
     margin-bottom: 5rem;
-
-
 }
 .search-bar{
    width: 84%;
@@ -156,15 +154,19 @@ box-shadow: 0 8px 6px  rgba(0,0,0,0.3)
 } 
 .search-button{
     width:15%;
-    outline:none;
+    outline:0;
     border-radius: 1rem;
     font-size: 2rem;
     padding: 1rem;
     color:white;
+    background: none;
     background-color: var(--main-bg);
     font-family: 'Cairo', sans-serif;
     
 }
+
+.search-button:focus {outline: none;}
+
 .search-button:hover{
     background-color: white;
     color: var(--main-bg);
@@ -262,6 +264,18 @@ footer p {
         margin-top: 0.5rem;
 
     }
+    .search-div{
+        width: auto;
+       
+    }
+    .search-bar{
+        width: auto;
+    }
+    .search-button{
+        width: auto;
+    
+    }
+    
 }
 
 
